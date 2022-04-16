@@ -6,21 +6,21 @@
   },
   "jsx element": {
     "prefix": "j",
-    "body": "<${1:elementName}>\n\t$0\n</${1}>",
+    "body": "<${1}>\n\t$0\n</${1}>",
     "description": "an element"
   },
   "jsx element self closed": {
     "prefix": "jc",
-    "body": "<${1:elementName} />",
+    "body": "<${1} />",
     "description": "an element self closed"
   },
   "useState": {
-    "prefix": "ush",
+    "prefix": "us",
     "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);$0"],
     "description": "React useState() hook"
   },
   "useEffect": {
-    "prefix": "ueh",
+    "prefix": "ue",
     "body": [
       "useEffect(() => {",
       "\t$1",
@@ -32,7 +32,7 @@
     "description": "React useEffect() hook"
   },
   "useCallback": {
-    "prefix": "ucbh",
+    "prefix": "uc",
     "body": [
       "const ${1:memoizedCallback} = useCallback(",
       "\t() => {",
@@ -44,14 +44,14 @@
     "description": "React useCallback() hook"
   },
   "useMemo": {
-    "prefix": "umh",
+    "prefix": "um",
     "body": [
       "const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}]);$0"
     ],
     "description": "React useMemo() hook"
   },
   "useRef": {
-    "prefix": "urh",
+    "prefix": "ur",
     "body": ["const $1 = useRef($2);$0"],
     "description": "React useRef() hook"
   }
