@@ -7,24 +7,6 @@
     "snippets": [
       {
         "language": [
-          "gitcommit",
-          "NeogitCommitMessage"
-        ],
-        "path": "./snippets/gitcommit.json"
-      },
-      {
-        "language": "go",
-        "path": "./snippets/go.json"
-      },
-      {
-        "language": [
-          "markdown",
-          "rmd"
-        ],
-        "path": "./snippets/markdown.json"
-      },
-      {
-        "language": [
           "html",
           "jade",
           "pug",
@@ -38,41 +20,26 @@
       },
       {
         "language": [
-          "css",
-          "scss",
-          "sass",
-          "less",
-          "stylus"
-        ],
-        "path": "./snippets/css.json"
-      },
-      {
-        "language": [
           "javascript",
           "javascriptreact",
           "vue",
           "svelte"
         ],
-        "path": "./snippets/javascript/javascript.json"
+        "path": "./snippets/javascript.json"
       },
       {
         "language": [
           "typescript",
           "typescriptreact"
         ],
-        "path": "./snippets/javascript/typescript.json"
+        "path": "./snippets/typescript.json"
       },
       {
-        "language": "javascriptreact",
-        "path": "./snippets/javascript/react.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/javascript/react-ts.json"
-      },
-      {
-        "language": "svelte",
-        "path": "./snippets/svelte.json"
+        "language": [
+          "typescriptreact",
+          "javascriptreact"
+        ],
+        "path": "./snippets/react.json"
       }
     ]
   }
