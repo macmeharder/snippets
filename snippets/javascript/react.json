@@ -31,6 +31,11 @@
     "body": "import { Component, PropTypes } from 'react'\n\nclass ${TM_FILENAME_BASE} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\n\t}\n\n\tcomponentWillMount () {\n\n\t}\n\n\tcomponentDidMount () {\n\n\t}\n\n\tcomponentWillReceiveProps (nextProps) {\n\n\t}\n\n\tshouldComponentUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate (prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount () {\n\n\t}\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1}.propTypes = {\n\n}\n\nexport default ${1}",
     "description": "Creates a React component class with PropTypes and all lifecycle methods"
   },
+  "reactStatelessComponent": {
+    "prefix": "rsc",
+    "body": "\nexport const ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
+    "description": "Creates a React stateless component"
+  },
   "reactFunctionComponent": {
     "prefix": "rfc",
     "body": "\nconst ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${TM_FILENAME_BASE}",
@@ -303,11 +308,7 @@
   },
   "useEffect": {
     "prefix": "ue",
-    "body": [
-      "useEffect(() => {",
-      "\t$1",
-      "}, [${3:dependencies}])$0"
-    ],
+    "body": ["useEffect(() => {", "\t$1", "}, [${3:dependencies}])$0"],
     "description": "React useEffect() hook"
   },
   "useEffect with return": {
@@ -351,44 +352,21 @@
     ],
     "description": "React useMemo() hook"
   },
-	"describeBlock": {
+  "describeBlock": {
     "prefix": "desc",
-    "body": [
-      "describe('$1', () => {",
-      "  $0",
-      "})",
-      ""
-    ],
+    "body": ["describe('$1', () => {", "  $0", "})", ""],
     "description": "Testing `describe` block"
   },
   "testBlock": {
     "prefix": "test",
-    "body": [
-      "test('should $1', () => {",
-      "  $0",
-      "})",
-      ""
-    ],
+    "body": ["test('should $1', () => {", "  $0", "})", ""],
     "description": "Testing `test` block"
   },
   "itBlock": {
     "prefix": "tit",
-    "body": [
-      "it('should $1', () => {",
-      "  $0",
-      "})",
-      ""
-    ],
+    "body": ["it('should $1', () => {", "  $0", "})", ""],
     "description": "Testing `it` block"
   },
   "itAsyncBlock": {
     "prefix": "tita",
-    "body": [
-      "it('should $1', async () => {",
-      "  $0",
-      "})",
-      ""
-    ],
-    "description": "Testing async `it` block"
-  }
-}
+    "body": ["it('should $1', async () => {", "  $0", "})", ""
