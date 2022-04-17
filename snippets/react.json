@@ -1,7 +1,7 @@
 {
   "react stateless component": {
     "prefix": "rsc",
-    "body": "export const ${TM_FILENAME_BASE:/uppercase} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
+    "body": "export const ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
     "description": "Creates a React stateless component"
   },
   "jsx element": {
@@ -16,7 +16,7 @@
   },
   "useState": {
     "prefix": "us",
-    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);$0"],
+    "body": ["const [${1}, set${1/(.*)/${1}/}] = useState($2);$0"],
     "description": "React useState() hook"
   },
   "useEffect": {
