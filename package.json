@@ -11,9 +11,7 @@
           "jade",
           "pug",
           "eruby",
-          "javascript",
           "javascriptreact",
-          "typescript",
           "typescriptreact"
         ],
         "path": "./snippets/html.json"
@@ -23,12 +21,18 @@
           "javascript",
           "javascriptreact",
           "vue",
-          "svelte"
+          "svelte",
+          "typescript",
+          "typescriptreact"
         ],
         "path": "./snippets/javascript.json"
       },
       {
         "language": [
+          "javascript",
+          "javascriptreact",
+          "vue",
+          "svelte",
           "typescript",
           "typescriptreact"
         ],
